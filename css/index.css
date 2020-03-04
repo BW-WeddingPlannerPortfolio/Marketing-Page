@@ -46,14 +46,12 @@ body .wrapper header h1 {
     margin-left: 0;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   body .wrapper header h1 span {
     width: 100%;
     font-size: 100px;
     display: block;
   }
-}
-@media (max-width: 700px) {
 }
 body .wrapper header p {
   width: 100%;
@@ -168,6 +166,14 @@ body .wrapper section .learn-more:hover {
   transition: 0.4s ease-in;
   border-radius: 10px;
   cursor: pointer;
+}
+body .wrapper section .learn-more p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .wrapper section .learn-more p a:hover {
+  color: navy;
+  transition: 0.4s ease-in;
 }
 body .wrapper section .top {
   margin-left: 70%;

@@ -68,15 +68,10 @@ body {
           margin-left: 0;
         }
         span {
-          @media @tablet {
+          @media @mobile {
             width: 100%;
             font-size: 100px;
             display: block;
-          }
-          @media @mobile {
-            // width: 100%;
-            // font-size: 100px;
-            // display: block;
           }
         }
       } // Closes H1
@@ -162,6 +157,16 @@ body {
       .learn-more {
         .btn();
         margin-left: 30%;
+        p {
+          a {
+            text-decoration: none;
+            color: @color;
+            &:hover {
+              color: @bg-color;
+              transition: 0.4s ease-in;
+            }
+          }
+        }
       } // Closes Learn-More
       .top {
         margin-left: 70%;

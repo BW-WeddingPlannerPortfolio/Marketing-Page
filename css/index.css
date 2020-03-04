@@ -1,6 +1,90 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 5px;
+}
+nav .nav-wrap {
+  display: flex;
+  justify-content: space-evenly flex-end;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+}
+nav .nav-wrap .logo {
+  background-image: url(../Assets/logo.png);
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+  margin-left: 10%;
+}
+nav .nav-wrap .logo-link {
+  width: 100px;
+  height: 100px;
+}
+nav .nav-wrap .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row;
+  width: 45%;
+  opacity: 1;
+}
+nav .nav-wrap .links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 0;
+}
+nav .nav-wrap .links a:hover {
+  color: blueviolet;
+}
+nav .nav-wrap .links .home {
+  margin-left: -67%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links .home {
+    margin-left: 5%;
+  }
+}
+nav .nav-wrap .links #about {
+  margin-left: -61%;
+}
+@media (max-width: 800px) {
+  nav .nav-wrap .links #about {
+    margin-left: 10%;
+  }
+}
+nav .nav-wrap .links .about {
+  margin-left: -79%;
+}
+@media (max-width: 700px) {
+  nav .nav-wrap .links .about {
+    margin-left: 5%;
+  }
 }
 body {
   background: url(../Assets/chairoverlay.png);
@@ -150,6 +234,10 @@ body .wrapper section .wrap .con {
   }
 }
 body .wrapper section .learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
   width: 105px;
   height: 40px;
   color: #ffffff;
@@ -158,6 +246,7 @@ body .wrapper section .learn-more {
   font-weight: bold;
   font-size: 16px;
   border-radius: 10px 0 10px 0;
+  text-decoration: none;
   margin-left: 30%;
 }
 body .wrapper section .learn-more:hover {
@@ -166,14 +255,6 @@ body .wrapper section .learn-more:hover {
   transition: 0.4s ease-in;
   border-radius: 10px;
   cursor: pointer;
-}
-body .wrapper section .learn-more p a {
-  text-decoration: none;
-  color: #ffffff;
-}
-body .wrapper section .learn-more p a:hover {
-  color: navy;
-  transition: 0.4s ease-in;
 }
 body .wrapper section .top {
   margin-left: 70%;

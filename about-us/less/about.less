@@ -1,57 +1,24 @@
-// Reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 // Font Imports
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans+Condensed:300&display=swap');
+@import '../../LESS/mix-ins.less';
+@import '../../LESS/variables.less';
+@import '../../LESS/reset.less';
+@import '../../LESS/nav.less';
 
-// Variables
-@page-bg: #123456be;
-@header-font: 'Merriweather', serif;
-@general-font: 'Open Sans Condensed', sans-serif;
-// Mix-ins
-.card(@wid) {
-  width: @wid;
-  height: 300px;
-  background-color: rgba(128, 128, 128, 0.4);
-  box-shadow: 2px 2px 10px #123456;
-  border-radius: 10px;
-}
-
-.flex(@just:center, @ali:center, @flow:row) {
-  display: flex;
-  justify-content: @just;
-  align-items: @ali;
-  flex-flow: @flow;
-}
-.w50() {
-  width: 50%;
-}
-.bordered() {
-  border: 1px solid gray;
-}
-.font(@fonts) {
-  font-family: @fonts;
-}
-.genfont(@font, @fow) {
-  font-family: @font;
-  font-weight: @fow;
-  line-height: 1.5;
-}
-.img() {
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
 // Main Content
 body {
+  nav {
+    .logo-link {
+      .logo {
+        background-image: url(../../Assets/logo.png);
+      }
+      .links {
+        #home {
+          margin-left: -50%;
+        }
+      }
+    }
+  }
   background-color: @page-bg;
   .wrapper {
     // width: 100%;
@@ -66,7 +33,7 @@ body {
         .w50();
         height: 300px;
         // .bordered();
-        .flex();
+        .flex(center, center column);
         .img {
           background-image: url(../Assets/schrese-holloway.png);
           .img();
@@ -76,7 +43,7 @@ body {
       .wrap {
         .flex(center, center, column);
         // .bordered();
-        margin-left: -12%;
+        // margin-left: -12%;
         h3 {
           font-size: 50px;
           font-weight: bold;
@@ -174,9 +141,9 @@ body {
       } // Closes Left
     } // Closes Card-Wrapper
     .big-card {
-      .flex(@flow:column wrap);
+      .flex(center, center, column);
       .card(100%);
-      height: 700px;
+      height: 900px;
       .wedding-page-img {
         background-image: url(../Assets/wedding-planner-start-page.png);
         .img();
@@ -184,16 +151,31 @@ body {
         width: 100%;
       } // Closes Wedding-Page-Img
       .con-wrap {
+        margin-top: 3%;
+        .flex(center, center, column);
         h2 {
           text-align: center;
+          .font(@header-font);
         } // Closes h2
         p {
           width: 75%;
           padding: 5%;
-          h3 {
-            margin-top: 10%;
-          } // Closes h3
+          .font(@general-font);
+          font-weight: bold;
+          line-height: 1.5;
         } // Closes p
+        .mission {
+          .font(@header-font);
+        } // Closes Mission
+        .project-info {
+          margin-top: -3%;
+        }
+        .mission-con {
+          justify-self: center;
+          align-self: center;
+          margin-left: 12%;
+          margin-top: -4%;
+        } // Closes Mission-Con
       } // Closes con-wrap
     } // Closes Big-card
   } // Closes wrapper

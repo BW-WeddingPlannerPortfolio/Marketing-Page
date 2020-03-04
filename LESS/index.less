@@ -157,6 +157,16 @@ body {
       .learn-more {
         .btn();
         margin-left: 30%;
+        p {
+          a {
+            text-decoration: none;
+            color: @color;
+            &:hover {
+              color: @bg-color;
+              transition: 0.4s ease-in;
+            }
+          }
+        }
       } // Closes Learn-More
       .top {
         margin-left: 70%;

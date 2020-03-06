@@ -7,6 +7,7 @@
 
 // Main Content
 body {
+  background-color: @page-bg;
   nav {
     .logo-link {
       .logo {
@@ -15,19 +16,67 @@ body {
       .links {
         #home {
           margin-left: -50%;
-        }
-      }
-    }
-  }
-  background-color: @page-bg;
+        } // Closes Home
+      } // Closes Logo
+    } // Closes Logo-link
+  } // Closes Nav
+
   .wrapper {
-    // width: 100%;
-    .flex(center, center, row wrap);
-    margin-top: 5%;
-    @media @mobile {
+    .big-card {
       .flex(center, center, column);
-    }
-    .top {
+      .card(100%);
+      height: 900px;
+      margin-top: 1%;
+      .wedding-page-img {
+        background-image: url(../Assets/wedding-planner-start-page.png);
+        .img();
+        height: 480px;
+        width: 100%;
+        margin-top: -3%;
+        @media @mobile {
+          margin-top: -21%;
+        }
+      } // Closes Wedding-Page-Img
+      .con-wrap {
+        margin-top: 3%;
+        .flex(center, center, column);
+        h2 {
+          text-align: center;
+          .font(@header-font);
+        } // Closes h2
+        p {
+          width: 75%;
+          padding: 5%;
+          .font(@general-font);
+          font-weight: bold;
+          line-height: 1.5;
+          @media @mobile {
+            width: 100%;
+          }
+        } // Closes p
+        .mission {
+          .font(@header-font);
+        } // Closes Mission
+        .project-info {
+          margin-top: -3%;
+          @media @mobile {
+            width: 100%;
+            // margin-right: 10%;
+          }
+        }
+        .mission-con {
+          justify-self: center;
+          align-self: center;
+          margin-left: 12%;
+          margin-top: -4%;
+          @media @mobile {
+            margin-left: 0;
+          }
+        } // Closes Mission-Con
+      } // Closes con-wrap
+    } // Closes Big-card
+
+    .bottom {
       .card(50%);
       width: 97%;
       .flex(center, center, row wrap);
@@ -87,237 +136,5 @@ body {
         }
       } // Closes Wrap
     } // Closes top
-    .card-wrapper {
-      .flex();
-      width: 100%;
-      @media @mobile {
-        .flex(center, center, column);
-      }
-      .left {
-        .w50();
-        // .bordered();
-        .flex(center, center, column);
-        @media @mobile {
-          width: 95%;
-        }
-
-        .card {
-          //   .bordered();
-          .flex();
-          width: 100%;
-          .card(100%);
-          margin-bottom: 5%;
-          padding-left: 3%;
-          margin-left: 3%;
-          @media @900 {
-            flex-direction: column;
-            // padding: 3%;
-            padding: 0;
-            height: 500px;
-          }
-          @media @mobile {
-            width: 100%;
-            margin-right: 3%;
-          }
-          .miranda {
-            background-image: url(../Assets/miranda-mussleman.png);
-            .img();
-            @media @900 {
-              width: 100%;
-              height: 500px;
-            }
-            @media @mobile {
-              height: 300px;
-              margin-top: -10%;
-            }
-          } // Closes Miranda
-          .edvin {
-            background-image: url(../Assets/edvin-cartoon.png);
-            .img();
-            @media @900 {
-              width: 100%;
-              height: 500px;
-              // margin-top: -46%;
-            }
-          } // Closes Edvin
-          .wrap {
-            .flex(center, center, column wrap);
-            width: 50%;
-            margin-left: 5%;
-            padding-right: 3%;
-            @media @900 {
-              .flex(center, center, row wrap);
-              width: 100%;
-            }
-            @media @mobile {
-              .flex(center, center, column);
-              margin-top: 20%;
-            }
-            h3 {
-              .font(@header-font);
-              text-align: left;
-              @media @900 {
-                width: 50%;
-                margin-top: -13%;
-              }
-              @media @mobile {
-                font-size: 40px;
-                width: 100%;
-              }
-            }
-            p {
-              .genfont(@general-font, bold);
-              width: 100%;
-              @media @mobile {
-                width: 100%;
-              }
-            }
-          } // Closes wrap
-        } // Closes Card
-      } // Closes Left
-      .right {
-        .w50();
-        // .bordered();
-        .flex(center, center, column);
-        margin-left: 3%;
-        @media @mobile {
-          width: 95%;
-        }
-
-        .card {
-          //   .bordered();
-          .flex();
-          width: 100%;
-          .card(100%);
-          margin-bottom: 5%;
-          padding-left: 3%;
-          margin-right: 3%;
-          @media @900 {
-            flex-direction: column;
-            // padding: 3%;
-            padding: 0;
-            height: 500px;
-          }
-          @media @mobile {
-            // width: 95%;
-            margin: 0;
-            padding: 0;
-            margin-top: 5%;
-            margin-bottom: 3%;
-            margin-right: 3%;
-          }
-          .isaac {
-            background-image: url(../Assets/isaac-rutledge.png);
-            .img();
-            @media @900 {
-              width: 100%;
-              height: 300px;
-              margin-top: -11%;
-            }
-            @media @mobile {
-              margin-top: -14;
-            }
-          } // Closes Isaac
-          .naomi {
-            background-image: url(../Assets/naomi-torres.png);
-            .img();
-            @media @900 {
-              width: 100%;
-              height: 300px;
-              margin-top: -5%;
-            }
-          } // Closes Naomi
-          .wrap {
-            .flex(center, center, column wrap);
-            width: 50%;
-            margin-left: 5%;
-            padding-right: 3%;
-            @media @900 {
-              .flex(center, center, row wrap);
-              width: 100%;
-            }
-            @media @mobile {
-              .flex(center, center, column);
-              margin-top: 30%;
-            }
-            h3 {
-              .font(@header-font);
-              text-align: left;
-              @media @900 {
-                width: 50%;
-                margin-top: -25%;
-              }
-              @media @mobile {
-                font-size: 40px;
-                width: 100%;
-              }
-            }
-            p {
-              .genfont(@general-font, bold);
-              @media @900 {
-                width: 50%;
-                margin-top: 3%;
-              }
-              @media @mobile {
-                width: 100%;
-              }
-            }
-          } // Closes wrap
-
-          // .card();
-        } // Closes Card
-      } // Closes Left
-    } // Closes Card-Wrapper
-    .big-card {
-      .flex(center, center, column);
-      .card(100%);
-      height: 900px;
-      .wedding-page-img {
-        background-image: url(../Assets/wedding-planner-start-page.png);
-        .img();
-        height: 480px;
-        width: 100%;
-        @media @mobile {
-          margin-top: -21%;
-        }
-      } // Closes Wedding-Page-Img
-      .con-wrap {
-        margin-top: 3%;
-        .flex(center, center, column);
-        h2 {
-          text-align: center;
-          .font(@header-font);
-        } // Closes h2
-        p {
-          width: 75%;
-          padding: 5%;
-          .font(@general-font);
-          font-weight: bold;
-          line-height: 1.5;
-          @media @mobile {
-            width: 100%;
-          }
-        } // Closes p
-        .mission {
-          .font(@header-font);
-        } // Closes Mission
-        .project-info {
-          margin-top: -3%;
-          @media @mobile {
-            width: 100%;
-            // margin-right: 10%;
-          }
-        }
-        .mission-con {
-          justify-self: center;
-          align-self: center;
-          margin-left: 12%;
-          margin-top: -4%;
-          @media @mobile {
-            margin-left: 0;
-          }
-        } // Closes Mission-Con
-      } // Closes con-wrap
-    } // Closes Big-card
   } // Closes wrapper
 } // Closes Body

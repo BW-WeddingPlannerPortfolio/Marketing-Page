@@ -99,393 +99,7 @@ body .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  margin-top: 5%;
-}
-@media (max-width: 700px) {
-  body .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  }
-}
-body .wrapper .top {
-  width: 50%;
-  height: 300px;
-  background-color: rgba(128, 128, 128, 0.4);
-  box-shadow: 2px 2px 10px #123456;
-  border-radius: 10px;
-  width: 97%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin-bottom: 5%;
-}
-@media (max-width: 918px) {
-  body .wrapper .top {
-    height: 500px;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .top {
-    width: 95%;
-  }
-}
-body .wrapper .top .img-wrap {
-  width: 50%;
-  height: 300px;
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center column;
-  flex-flow: row;
-}
-@media (max-width: 700px) {
-  body .wrapper .top .img-wrap {
-    width: 100%;
-    margin-top: -13%;
-  }
-}
-body .wrapper .top .img-wrap .img {
-  background-image: url(../Assets/schrese-holloway.png);
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
-@media (max-width: 918px) {
-  body .wrapper .top .img-wrap .img {
-    width: 75%;
-  }
-}
-@media (max-width: 800px) {
-  body .wrapper .top .img-wrap .img {
-    width: 95%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .top .img-wrap .img {
-    width: 100%;
-  }
-}
-body .wrapper .top .wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-@media (max-width: 700px) {
-  body .wrapper .top .wrap {
-    margin-top: -30%;
-    padding-right: 4%;
-  }
-}
-body .wrapper .top .wrap h3 {
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 5%;
-  width: 100%;
-  font-family: 'Merriweather', serif;
-}
-body .wrapper .top .wrap p {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  line-height: 1.5;
-  width: 100%;
-  line-height: 2;
-  padding-left: 5%;
-}
-body .wrapper .card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  width: 100%;
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  }
-}
-body .wrapper .card-wrapper .left {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left {
-    width: 95%;
-  }
-}
-body .wrapper .card-wrapper .left .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  width: 100%;
-  height: 300px;
-  background-color: rgba(128, 128, 128, 0.4);
-  box-shadow: 2px 2px 10px #123456;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding-left: 3%;
-  margin-left: 3%;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .left .card {
-    flex-direction: column;
-    padding: 0;
-    height: 500px;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left .card {
-    width: 100%;
-    margin-right: 3%;
-  }
-}
-body .wrapper .card-wrapper .left .card .miranda {
-  background-image: url(../Assets/miranda-mussleman.png);
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .left .card .miranda {
-    width: 100%;
-    height: 500px;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left .card .miranda {
-    height: 300px;
-    margin-top: -10%;
-  }
-}
-body .wrapper .card-wrapper .left .card .edvin {
-  background-image: url(../Assets/edvin-cartoon.png);
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .left .card .edvin {
-    width: 100%;
-    height: 500px;
-  }
-}
-body .wrapper .card-wrapper .left .card .wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column wrap;
-  width: 50%;
-  margin-left: 5%;
-  padding-right: 3%;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .left .card .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left .card .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    margin-top: 20%;
-  }
-}
-body .wrapper .card-wrapper .left .card .wrap h3 {
-  font-family: 'Merriweather', serif;
-  text-align: left;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .left .card .wrap h3 {
-    width: 50%;
-    margin-top: -13%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left .card .wrap h3 {
-    font-size: 40px;
-    width: 100%;
-  }
-}
-body .wrapper .card-wrapper .left .card .wrap p {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  line-height: 1.5;
-  width: 100%;
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .left .card .wrap p {
-    width: 100%;
-  }
-}
-body .wrapper .card-wrapper .right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  margin-left: 3%;
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right {
-    width: 95%;
-  }
-}
-body .wrapper .card-wrapper .right .card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row;
-  width: 100%;
-  height: 300px;
-  background-color: rgba(128, 128, 128, 0.4);
-  box-shadow: 2px 2px 10px #123456;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding-left: 3%;
-  margin-right: 3%;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card {
-    flex-direction: column;
-    padding: 0;
-    height: 500px;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right .card {
-    margin: 0;
-    padding: 0;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    margin-right: 3%;
-  }
-}
-body .wrapper .card-wrapper .right .card .isaac {
-  background-image: url(../Assets/isaac-rutledge.png);
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card .isaac {
-    width: 100%;
-    height: 300px;
-    margin-top: -11%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right .card .isaac {
-    margin-top: -14;
-  }
-}
-body .wrapper .card-wrapper .right .card .naomi {
-  background-image: url(../Assets/naomi-torres.png);
-  background-repeat: none;
-  background-size: 100% 100%;
-  background-position: center;
-  width: 50%;
-  height: 250px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px #123456;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card .naomi {
-    width: 100%;
-    height: 300px;
-    margin-top: -5%;
-  }
-}
-body .wrapper .card-wrapper .right .card .wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  width: 50%;
-  margin-left: 5%;
-  padding-right: 3%;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right .card .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    margin-top: 30%;
-  }
-}
-body .wrapper .card-wrapper .right .card .wrap h3 {
-  font-family: 'Merriweather', serif;
-  text-align: left;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card .wrap h3 {
-    width: 50%;
-    margin-top: -25%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right .card .wrap h3 {
-    font-size: 40px;
-    width: 100%;
-  }
-}
-body .wrapper .card-wrapper .right .card .wrap p {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  line-height: 1.5;
-}
-@media (max-width: 918px) {
-  body .wrapper .card-wrapper .right .card .wrap p {
-    width: 50%;
-    margin-top: 3%;
-  }
-}
-@media (max-width: 700px) {
-  body .wrapper .card-wrapper .right .card .wrap p {
-    width: 100%;
-  }
 }
 body .wrapper .big-card {
   display: flex;
@@ -493,11 +107,12 @@ body .wrapper .big-card {
   align-items: center;
   flex-flow: column;
   width: 100%;
-  height: 300px;
-  background-color: rgba(128, 128, 128, 0.4);
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
   box-shadow: 2px 2px 10px #123456;
   border-radius: 10px;
   height: 900px;
+  margin-top: 1%;
 }
 body .wrapper .big-card .wedding-page-img {
   background-image: url(../Assets/wedding-planner-start-page.png);
@@ -510,6 +125,7 @@ body .wrapper .big-card .wedding-page-img {
   box-shadow: 2px 2px 10px #123456;
   height: 480px;
   width: 100%;
+  margin-top: -3%;
 }
 @media (max-width: 700px) {
   body .wrapper .big-card .wedding-page-img {
@@ -560,4 +176,220 @@ body .wrapper .big-card .con-wrap .mission-con {
   body .wrapper .big-card .con-wrap .mission-con {
     margin-left: 0;
   }
+}
+body .wrapper .mid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+@media (max-width: 750px) {
+  body .wrapper .mid-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+}
+body .wrapper .mid-section .left {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+}
+@media (max-width: 750px) {
+  body .wrapper .mid-section .left {
+    width: 85%;
+  }
+}
+body .wrapper .mid-section .left .card {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+@media (max-width: 950px) {
+  body .wrapper .mid-section .left .card {
+    height: 530px;
+  }
+}
+body .wrapper .mid-section .left .card .miranda {
+  background-image: url(../Assets/miranda-mussleman.png);
+}
+body .wrapper .mid-section .left .card .edvin {
+  background-image: url(../Assets/edvin-cartoon.png);
+}
+body .wrapper .mid-section .left .card .img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+body .wrapper .mid-section .left .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .left .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 2%;
+  letter-spacing: 1.5;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .left .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+body .wrapper .mid-section .right {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+}
+@media (max-width: 750px) {
+  body .wrapper .mid-section .right {
+    width: 85%;
+  }
+}
+body .wrapper .mid-section .right .card {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+@media (max-width: 950px) {
+  body .wrapper .mid-section .right .card {
+    height: 530px;
+  }
+}
+body .wrapper .mid-section .right .card .isaac {
+  background-image: url(../Assets/isaac-rutledge.png);
+}
+body .wrapper .mid-section .right .card .naomi {
+  background-image: url(../Assets/naomi-torres.png);
+}
+body .wrapper .mid-section .right .card .img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+body .wrapper .mid-section .right .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .right .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 2%;
+  letter-spacing: 1.5;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .right .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 70%;
+}
+body .wrapper .bottom {
+  width: 50%;
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  width: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 5%;
+}
+@media (max-width: 918px) {
+  body .wrapper .bottom {
+    height: 500px;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper .bottom {
+    width: 95%;
+  }
+}
+body .wrapper .bottom .img-wrap {
+  width: 50%;
+  height: 300px;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center column;
+  flex-flow: row;
+}
+@media (max-width: 700px) {
+  body .wrapper .bottom .img-wrap {
+    width: 100%;
+    margin-top: -13%;
+  }
+}
+body .wrapper .bottom .img-wrap .img {
+  background-image: url(../Assets/schrese-holloway.png);
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #123456;
+}
+@media (max-width: 918px) {
+  body .wrapper .bottom .img-wrap .img {
+    width: 75%;
+  }
+}
+@media (max-width: 800px) {
+  body .wrapper .bottom .img-wrap .img {
+    width: 95%;
+  }
+}
+@media (max-width: 700px) {
+  body .wrapper .bottom .img-wrap .img {
+    width: 100%;
+  }
+}
+body .wrapper .bottom .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+@media (max-width: 700px) {
+  body .wrapper .bottom .wrap {
+    margin-top: -30%;
+    padding-right: 4%;
+  }
+}
+body .wrapper .bottom .wrap h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 5%;
+  width: 100%;
+  font-family: 'Merriweather', serif;
+}
+body .wrapper .bottom .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 100%;
+  line-height: 2;
+  padding-left: 5%;
 }

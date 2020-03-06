@@ -95,13 +95,19 @@ body nav .logo-link .logo {
 body nav .logo-link .links #home {
   margin-left: -50%;
 }
+body .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
 body .wrapper .big-card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   width: 100%;
-  height: 300px;
+  height: 500px;
   background-color: rgba(12, 18, 75, 0.199);
   box-shadow: 2px 2px 10px #123456;
   border-radius: 10px;
@@ -171,9 +177,107 @@ body .wrapper .big-card .con-wrap .mission-con {
     margin-left: 0;
   }
 }
+body .wrapper .mid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+body .wrapper .mid-section .left {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .left .card {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .left .card .miranda {
+  background-image: url(../Assets/miranda-mussleman.png);
+}
+body .wrapper .mid-section .left .card .edvin {
+  background-image: url(../Assets/edvin-cartoon.png);
+}
+body .wrapper .mid-section .left .card .img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+body .wrapper .mid-section .left .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .left .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 2%;
+  letter-spacing: 1.5;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .left .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+}
+body .wrapper .mid-section .right {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .right .card {
+  width: 80%;
+  height: 500px;
+  background-color: rgba(12, 18, 75, 0.199);
+  box-shadow: 2px 2px 10px #123456;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .right .card .isaac {
+  background-image: url(../Assets/isaac-rutledge.png);
+}
+body .wrapper .mid-section .right .card .naomi {
+  background-image: url(../Assets/naomi-torres.png);
+}
+body .wrapper .mid-section .right .card .img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+body .wrapper .mid-section .right .card .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+body .wrapper .mid-section .right .card .wrap h3 {
+  font-family: 'Merriweather', serif;
+  margin-top: 2%;
+  letter-spacing: 1.5;
+  margin-bottom: 3%;
+}
+body .wrapper .mid-section .right .card .wrap p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 70%;
+}
 body .wrapper .bottom {
   width: 50%;
-  height: 300px;
+  height: 500px;
   background-color: rgba(12, 18, 75, 0.199);
   box-shadow: 2px 2px 10px #123456;
   border-radius: 10px;
